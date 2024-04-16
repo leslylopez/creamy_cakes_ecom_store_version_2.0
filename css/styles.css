@@ -1,0 +1,48 @@
+html {
+    background-color:rosybrown;
+}
+
+.navbar {
+ background-color: rgb(255, 241, 243);
+}
+
+.nav-item {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(255, 241, 243);
+}
+
+.navbar-brand {
+    height: 48px;
+    display: flex;
+    height: 85px;
+}
+
+h2 {
+    
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.card {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    padding-bottom: 20px;
+
+}
+
+.card-image {
+    
+   
+
+}
