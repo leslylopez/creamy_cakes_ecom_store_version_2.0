@@ -1,5 +1,5 @@
 html {
-    background-color:rosybrown;
+    background-color:rgb(255, 241, 243);
 }
 
 .navbar {
@@ -63,9 +63,6 @@ h2 our-story {
 }
 
 p {
-   padding-top: 10px ;
-   padding-left: 70px;
-   padding-right: 70px;
    font-size: 18px;
    font-family: Arial, Helvetica, sans-serif;
 }
@@ -95,3 +92,4 @@ h5 {
     max-width: 100%;
     height: auto;
 }
+
