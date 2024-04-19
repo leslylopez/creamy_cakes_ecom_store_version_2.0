@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamy Cakes</title>
+    <!-- include bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- navigation -->
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" style="max-width: 40%;">
+                    <img src="images.html/Official cake logo 3.png" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="birthdaycakes.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cakes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="birthdaycakes.html">Birthday Cakes</a>
+                                <li><a class="dropdown-item" href="seasonalcakes.html">Seasonal Cakes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                class="bi bi-cart fs-3" viewBox="0 0 16 19">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                            </svg>
+                        </a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- checkout form -->
+        <section class="container">
+            <h2>Checkout</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputFirstname4" class="form-label">First Name</label>
+                    <input type="firstname" class="form-control" id="inputFirstname4" placeholder="John">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputLastname4" class="form-label">Last Name</label>
+                    <input type="lastname" class="form-control" id="inputLastname4" placeholder="Doe">
+                </div>
+                <div class="col-12">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="user@email.com">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Save information for next time
+                        </label>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- payment form -->
+
+        <section class="container mb-3">
+            <h4>Payment Information</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Debit Card
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Credit Card
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                    Paypal
+                </label>
+            </div>
+        </section>
+
+        <section class="container">
+            <form class="row g-3">
+                <div class="mb-3 col-md-6">
+                    <label for="cardholderName" class="form-label"> Cardholder Name</label>
+                    <input type="cardholderName" class="form-control" id="cardholderName" placeholder="John Doe">
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="cardNumber" class="form-label">Card Number</label>
+                    <input type="cardNumber" class="form-control" id="cardNumber" placeholder="1234 1234 1234 1234">
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="expirationDate" class="form-label">Expiration Date</label>
+                    <input type="expirationDate" class="form-control" id="expirationDate" placeholder="MM/YY">
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="cvc" class="form-label">CVC</label>
+                    <input type="cvc" class="form-control" id="cvc" placeholder="CVC">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Save information for next time</label>
+                </div>
+                <button type="button" class="btn btn-outline-dark mb-4">Checkout</button>
+            </form>
+
+        </section>
+
+    </header>
+</body>
