@@ -15,7 +15,6 @@
   <header>
 
     <!-- Navigation -->
-
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" style="max-width: 40%;">
@@ -41,21 +40,21 @@
                 </li>
               </ul>
             </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Log In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="checkout.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                class="bi bi-cart fs-3" viewBox="0 0 16 19">
-                <path
-                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-              </svg>
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                  class="bi bi-cart fs-3" viewBox="0 0 16 19">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+              </a>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -64,9 +63,7 @@
         </div>
       </div>
     </nav>
-
     <!-- added card grid-->
-
     <section class="container">
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
@@ -74,9 +71,34 @@
             <img src="images.html/treslechesvanilla.jpeg" class="card-img-top" alt="vanillatresleches">
             <div class="card-body">
               <h5 class="card-title">Vanilla Tres Leches</h5>
-              <p class="card-text">...</p>
+              <p class="card-text">Savor the exquisite taste of our Vanilla Tres Leches cake, a beloved Latin American
+                dessert delicacy. Handcrafted with care, each moist and fluffy layer of sponge cake is infused with a
+                luscious blend of three creamy milks: evaporated milk, sweetened condensed milk, and heavy cream.</p>
               <p>$25.99</p>
-              <button type="button" class="btn btn-outline-dark">Order Now</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#orderModal">
+                Order Now
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Added to Cart</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Successfully added to Cart!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue
+                        Shopping</button>
+                      <a href="checkout.html" class="btn btn-outline-dark">Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -85,9 +107,34 @@
             <img src="images.html/lemoncake2.webp" class="card-img-top" alt="lemoncake">
             <div class="card-body">
               <h5 class="card-title">Lemon Cake</h5>
-              <p class="card-text">Indulge in the refreshing taste of our lemon cake</p>
+              <p class="card-text">Our Lemon Cake is a delightful fusion of tangy citrus and sweet indulgence.
+                Handcrafted with precision, each layer of moist cake is infused with the vibrant essence of fresh
+                lemons, creating a burst of refreshing flavor with every bite.</p>
               <p>$25.99</p>
-              <button type="button" class="btn btn-outline-dark">Order Now</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#orderModal">
+                Order Now
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Added to Cart</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Successfully added to Cart!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue
+                        Shopping</button>
+                      <a href="checkout.html" class="btn btn-outline-dark">Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -96,15 +143,35 @@
             <img src="images.html/coconutcake3.webp" class="card-img-top" alt="coconut-cake">
             <div class="card-body">
               <h5 class="card-title">Coconut Cake</h5>
-              <p class="card-text">Enjoy the delightful taste of our coconut cake</p>
-              <ul>
-                <li>Light and moist vanilla cake layers</li>
-                <li>Layered with fresh strawberry compote</li>
-                <li>Finished with fluffy whipped cream frosting</li>
-                <li>Garnished with sliced strawberries for a burst of flavor</li>
-              </ul>
+              <p class="card-text">Indulge in the exotic allure of our Coconut Cake, a culinary masterpiece that
+                transports you to sun-kissed shores and swaying palm trees. Crafted with meticulous care, each layer of
+                this moist and tender cake is infused with the irresistible flavor of freshly grated coconut, creating a
+                symphony of tropical bliss with every bite.</p>
               <p>$29.99</p>
-              <button type="button" class="btn btn-outline-dark">Order Now</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#orderModal">
+                Order Now
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Added to Cart</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Successfully added to Cart!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue
+                        Shopping</button>
+                      <a href="checkout.html" class="btn btn-outline-dark">Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -113,26 +180,67 @@
             <img src="images.html/chocolatecake.jpg" class="card-img-top" alt="chocolatecake">
             <div class="card-body">
               <h5 class="card-title">Chocolate Cake</h5>
-              <p class="card-text">Indulge in the rich and decadent flavor of our chocolate cake</p>
-              <ul>
-                <li>Moist and fluffy chocolate cake layer</li>
-                <li>Filled with creamy chocolate ganache</li>
-                <li>Coated with smooth chocolate buttercream frosting<g< /li>
-                <li>Garnished with chocolate sprinkles</li>
-              </ul>
+              <p class="card-text"> From its luscious chocolate ganache frosting to its irresistible cocoa crumble
+                topping, every element of this exquisite dessert is designed to captivate the palate and satisfy even
+                the most discerning chocolate lover. Our chocolate cake promises to elevate your dessert experience to
+                new heights of bliss.</p>
               <p>$29.99</p>
-              <button type="button" class="btn btn-outline-dark">Order Now</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#orderModal">
+                Order Now
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Added to Cart</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Successfully added to Cart!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue
+                        Shopping</button>
+                      <a href="checkout.html" class="btn btn-outline-dark">Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Email Section -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <h4>Subscribe to our Newsletter</h4>
+              <p>Stay updated with our latest news and promotions.</p>
+
+              <!-- Email Subscription Form -->
+              <form>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="Your email address"
+                    aria-label="Your email address" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-dark" type="button" id="button-addon2">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
 
 
-      <!-- including bootstrap javascript file -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <!-- including bootstrap javascript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 
   </header>
 </body>
