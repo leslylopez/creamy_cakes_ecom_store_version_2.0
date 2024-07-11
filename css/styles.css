@@ -48,13 +48,10 @@ h2 {
 
 .card-img-top {
     width: 100%;
-    object-fit: cover;
-    /* height: 300px; */
-    max-width: 600px;
-    max-height: 300px;
     height: 25vw;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
+   
 
 footer {
     padding-top: 30px;
