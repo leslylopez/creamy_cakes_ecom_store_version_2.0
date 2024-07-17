@@ -50,7 +50,7 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" role="button" onclick={logout()} >Logout-<label id="loggedInUser"></label></a>
+              <a class="nav-link" role="button" onclick={logout()} >Logout<label id="loggedInUser"></label></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="checkout.html">
@@ -63,6 +63,7 @@
             </li>
           </ul>
           <!-- search bar -->
+          <section>
             <form id="searchBarForm" class="d-flex" role="search">
               <input id="searchInput" name="search" class="form-control me-2" type="search" placeholder="Search"
                 aria-label="Search">
@@ -72,6 +73,7 @@
             <div id="searchResults" class="dropdown-menu">
               <ul id="productList" style="margin-right: 10px;"></ul>
             </div>
+          </section>
         </div>
       </div>
     </nav>
@@ -360,11 +362,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-<script src="data/seasonalCakesData.js"></script>
-<script src="data/birthdayCakesData.js"></script>
-<script src="searchBar.js"></script>
-<script src="displayUser.js"></script>
-
+        <script src="data/seasonalCakesData.js"></script>
+        <script src="data/birthdayCakesData.js"></script>
+        <script src="searchBar.js"></script>
 
 
 
