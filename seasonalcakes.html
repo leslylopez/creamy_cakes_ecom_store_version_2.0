@@ -56,10 +56,18 @@
               </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
+           <!-- search bar -->
+           <section>
+            <form id="searchBarForm" class="d-flex" role="search">
+              <input id="searchInput" name="search" class="form-control me-2" type="search" placeholder="Search"
+                aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+            <!-- display search results -->
+            <div id="searchResults" class="dropdown-menu">
+              <ul id="productList" style="margin-right: 10px;"></ul>
+            </div>
+          </section>
         </div>
       </div>
     </nav>
