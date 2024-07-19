@@ -70,11 +70,12 @@ This project is a capstone project that focuses on HTML, CSS, and Bootstrap to c
 ```
 This is one of my interesting piece of HTML I wrote because it was when previous knowledge of flexbox came in handy when making a payment form. 
 
-![Updated home page](/images/updated_index_page.png)
-![Updated registration page](/images/updated_registration_page.png)
-![Updated login page](/images/updated_login_page.png)
-
 ## Capstone 2.0 changes 
+
+![Updated home page](/screenshots/updated_index_page.png)
+![Updated registration page](/screenshots/updated_registration_page.png)
+![Updated login page](/screenshots/updated_login_page.png)
+
 
 The user can now register using personal credit that will be stored in the local API. The saved creditials will allow the user to login on the login page. User cannot view content unless logged in.
 
